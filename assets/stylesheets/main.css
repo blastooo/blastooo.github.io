@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  background: #a9b2b9;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section {
+  height: 800px; 
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 1200px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row {
+  background: #293f50;
+}
+.row,
+.row-alt {
+  min-width: 1200px;
+}
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #3396FF, #a1d3b0);
+  background: -moz-linear-gradient(to right, #3396FF, #a1d3b0);
+  background: linear-gradient(to right, #3396FF, #a1d3b0);
+  height: 150px;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+  color: #648880;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+  color: #648880;
+}
+h3 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #000000;
+}
+h4 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #a9b2b9;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #a9b2b9;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #3396FF;
+}
+.stats li:hover,
+.stats li:first-child {
+  border-bottom: 4px solid #3396FF;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+.stats li:hover,
+.stats li:hover h4 {
+  color: #3396FF;
+}
+.filter:hover,
+.profile a:hover {
+  cursor: pointer;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 20px;
+  background-color: #3396FF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  text-align: center;
+  color: #fff;
+}
+.btn:hover,
+.btn:hover a{
+  background-color: #fff; 
+  color: #3396FF;
+  text-decoration: none
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px; 
+}
+.nav li {
+  display: inline-block;
+  margin: 0 20px; 
+  vertical-align: middle;
+}
+.nav .search-bar {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 180px;
+  height: 28px;
+  margin-bottom: 3px;
+}
+.nav li:last-child {
+  margin-right: 20;
+}
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  float: left;
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: 25px;
+  padding-top: 11px;
+  text-transform: uppercase;
+}
+header img {
+  float: left;
+  width: 210px;
+  border-radius: 50%;
+  border:10px solid #293f50;
+  margin: -115px 20px -35px 0px;
+}
+.stats li {
+  width: 80px;
+  display: inline-block;
+  margin-top: 5px;
+  vertical-align: top;
+  text-align: center;
+  color: #fff;
+}
+.stats h4 {
+  color: #fff;
+}
+.stats li:first-child {
+  margin-left: 185px;
+}
+
+/*
+  ========================================
+  Profile
+  ========================================
+*/
+
+.profile {
+  margin-top: 50px;
+}
+.profile h4 {
+  float: left;
+  margin: 5px 10px 0 0;
+  color: #4c4c4c;
+  text-decoration: inherit;
+}
+.profile h5 {
+  margin-top: 6px;
+  color: #4c4c4c;
+  display: none;
+}
+.profile .status {
+  color: #000000;
+  margin: 15px 0;
+  padding-left: 10px;
+  padding-right: 80px;
+  font-style: italic;
+}
+.profile .btn {
+  margin-top: 20px;
+}
+
+/*
+  ========================================
+  Tweets
+  ========================================
+*/
+
+.tweets {
+  background-color: #fff;
+  margin: 10px;
+}
+.tweets img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin: 2px 10px 0 0;
+  float: left;
+}
+.tweets input {
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  padding: 13px 10px;
+  width: 620px;  
+}
+.tweets h4 {
+  padding: 15px 0px 15px 15px;
+  border-bottom: 1px solid #a9b2b9;
+  background-color: #E8F5FD;
+}
+.tweets div {
+  border-bottom: 1px solid #a9b2b9;
+  padding: 10px 10px 10px 15px;
+}
+.tweets .toggler {
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+.hidden {
+  display: none;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+footer small {
+  float: left;
+  font-weight: 400;
+}
