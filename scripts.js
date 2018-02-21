@@ -30,6 +30,7 @@ $(document).ready(function(){
       };
 
     };
+    // continue to push tweets
     setTimeout(addNextTweet, 1);
   };
 

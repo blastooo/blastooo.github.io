@@ -6,20 +6,22 @@
 window.streams = {};
 streams.home = [];
 streams.users = {};
-streams.users.leo_tsang = [];
 streams.users.blastooo = [];
+streams.users.googlegorilla = [];
+streams.users.leo_tsang = [];
 streams.users.annabanana = [];
 streams.users.liniumz = [];
 streams.users.boluchan = [];
 streams.users.tallchinese = [];
 streams.users.kellybelly = [];
 window.users = Object.keys(streams.users);
-users.shift(); // remove leo_tsang from random tweets
+users.shift(); // remove blastooo from random tweets
 
 // library of real names
 var fullNames = {
-  leo_tsang: 'Leo Tsang',
   blastooo: 'James Lee',
+  leo_tsang: 'Leo Tsang',
+  googlegorilla: 'David Shen',
   annabanana: 'Anna Kim',
   liniumz: 'Jay Lin',
   boluchan: 'Tina Yeh',
@@ -82,7 +84,7 @@ var writeTweet = function(message){
 // utility function to post new tweet
 var postTweet = function(message){
   var tweet = {};
-  tweet.user = 'leo_tsang';
+  tweet.user = 'blastooo';
   tweet.fullName = fullNames[tweet.user];
   tweet.message = message;
   tweet.created_at = new Date();
