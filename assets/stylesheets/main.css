@@ -357,6 +357,7 @@ header img {
 .tweets .toggler {
   padding: 10px;
   text-align: center;
+  cursor: pointer;
   display: none;
 }
 .hidden {
