@@ -15,6 +15,7 @@ streams.users.boluchan = [];
 streams.users.tallchinese = [];
 streams.users.kellybelly = [];
 streams.users.stiemrolla = [];
+streams.users.jguamie = [];
 window.users = Object.keys(streams.users);
 users.shift(); // remove blastooo from random tweets
 
@@ -28,7 +29,8 @@ var fullNames = {
   boluchan: 'Tina Yeh',
   tallchinese: 'Mike Chan',
   kellybelly: 'Kelli Hsu',
-  stiemrolla: 'Ben Stiemsma'
+  stiemrolla: 'Ben Stiemsma',
+  jguamie: 'John Lee'
 };
 
 // utility function for adding tweets to our data structures
